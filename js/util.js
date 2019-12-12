@@ -1,4 +1,4 @@
-const QUIZ_API = 'http://localhost:5001/vn-site-short-url/us-central1/widgets';
+const QUIZ_API = 'https://us-central1-vn-site-short-url.cloudfunctions.net/widgets';
 const QUIZ_TOKEN = 'quiz-token';
 const QUIZ_USER = 'quiz-user';
 const QUIZ_EMAIL = 'quiz-email';
