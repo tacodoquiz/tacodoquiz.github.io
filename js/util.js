@@ -85,7 +85,8 @@ function onSignInSubmit() {
     return;
   }
 
-    window.signingIn = true;
+  window.signingIn = true;
+  updateSignInButtonUI();
 
     var phoneNumber = getPhoneNumberFromUserInput();
     var appVerifier = window.recaptchaVerifier;
@@ -185,6 +186,7 @@ function displayCountdown() {
 function displayScore() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+      $('.player').text(user.displayName + ' ' + user.phoneNumber);
       let score = user.photoURL ? user.photoURL.match(/\d+/) : 0;
       $("#score").data('percent', score/5*100).data('score',`${score}/5`).loading();
     } else {
