@@ -1,0 +1,28 @@
+{
+  "q1": {
+    "type": "radio",
+    "question": "Which Cloud platform supports host a static html?",
+    "options": [
+      "Google Cloud Platform",
+      "Github",
+      "All of them"
+    ],
+    "answer": "All of them"
+  },
+  "q2": {
+    "type": "checkbox",
+    "question": "Which Cloud platform are you using now?",
+    "options": [
+      "Google Cloud Platform",
+      "Amazon Web Service",
+      "Microsoft Azure",
+      "All of them"
+    ],
+    "answer": "Amazon Web Service,Microsoft Azure"
+  },
+  "q3": {
+    "type": "text",
+    "question": "How many years experience do you have in Cloud Platform?",
+    "answer": "3"
+  },
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <main role="main">
+      <div class="bg-light pb-5">
+        <div class="container">
+          <div class="py-5 text-center">
+            <a href="/"><img class="d-block mx-auto mb-4 img-fluid" src="images/logo.png" alt="logo"></a>
+            <h2>Quick Challenge</h2>
+            <p class="lead">Thank you for your time. We look forward to working with you in the future.</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div id="score" class="progress-bar" data-percent="25" data-duration="500" data-color="#ccc,#fdba04"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="blog-footer text-center">
+      <p class="py-3">Copyright by <a href="mailto:contact@tavis.dev">Tavis</a></p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+
+    <script>
+      // Paste the config your copied earlier
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1KLygZ2fCQs85a8lezhavp4zT1WjWgjo",
+        authDomain: "vn-site-short-url.firebaseapp.com",
+        databaseURL: "https://vn-site-short-url.firebaseio.com",
+        projectId: "vn-site-short-url",
+        storageBucket: "vn-site-short-url.appspot.com",
+        messagingSenderId: "1005507535037",
+        appId: "1:1005507535037:web:856fa010e18b2f98fdd7d4"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/util.js"></script>
+    <script>displayScore()</script>
+  </body>
+</html>

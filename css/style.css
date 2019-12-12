@@ -1,0 +1,256 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Poppins-Regular,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.site-wrap {
+  width: 100%;
+  margin: 0 auto;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg,#c850c0,#4158d0);
+  background: -o-linear-gradient(-135deg,#c850c0,#4158d0);
+  background: -moz-linear-gradient(-135deg,#c850c0,#4158d0);
+  background: linear-gradient(-135deg,#ffd700,#959595);
+}
+
+.block-login {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-login .container {
+  padding: 100px 0;
+  background: #222;
+  border-radius: 10px;
+}
+
+.avatar img { max-width: 450px; }
+
+.login-form .ele {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.login-form input {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 60px;
+}
+.login-form .btn-submit {
+  width: 260px;
+  padding-top: 20px;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+}
+
+.login-form button {
+    color: #000;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #ffd700;
+    align-items: center;
+}
+.login-form .focus-input {
+      display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0;
+    color: rgba(87,184,70,.8);
+}
+
+.login-form .symbol {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+.login-form .symbol.mobile { padding-left: 30px; }
+
+.login-title {
+  font-size: 24px;
+  color: #ffd700;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+}
+
+
+.login-form .submit {
+      width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+@media (max-width: 420px) {
+  .block-login .container { padding: 50px 0; }
+  .avatar { padding-bottom: 30px; }
+  .avatar img { max-width: 200px; }
+  .login-form .btn-submit {  margin-left: 60px; }
+}
+
+
+/*
+* ==================================================
+* count down
+* ==================================================
+*/
+
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
+}
+
+.countdown-circles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown-circles span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-circles span:first-of-type {
+    margin-left: 0;
+}
+
+.bg-gradient-1 {
+    color: #555;
+    background: #ccc;
+    background: -webkit-linear-gradient(to right, #ccc, #ffd70b, #ffc107);
+    background: linear-gradient(to right, #ccc, #ffd70b, #ffc107);
+}
+
+.rounded {
+    border-radius: 1rem !important;
+}
+
+/*
+* ==================================================
+* Score
+* ==================================================
+*/
+
+.progress-bar {
+    background-color: transparent;
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.progress-bar div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 50px;
+  line-height: 175px;
+  height: 175px;
+  width: 175px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.progress-bar .background { background-color: #b3cef6; }
+
+.progress-bar .rotate {
+  clip: rect(0 100px 200px 0);
+  background-color: #fdba04;
+}
+
+.progress-bar .left {
+  clip: rect(0 100px 200px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+
+.progress-bar .right {
+  clip: rect(0 100px 200px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #4b86db;
+}
+ @keyframes
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}

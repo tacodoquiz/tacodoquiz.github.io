@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+
+  <body>
+    <main role="main">
+      <div class="bg-light">
+        <div class="container">
+          <div class="py-5 text-center">
+            <a href="/"><img class="d-block mx-auto mb-4 img-fluid" src="images/logo.png" alt="logo"></a>
+            <h2>Quick Challenge</h2>
+            <p class="lead">Thank you so much for to playing my game! Try your best and get a lucky gift!</p>
+          </div>
+          <!-- countdown -->
+          <div class="py-5">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="rounded bg-gradient-1 shadow p-4 text-center mb-5">
+                    <p class="mb-4 font-weight-bold text-uppercase">Own It - Win Right</p>
+                    <div id="countdown" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- countdown end-->
+
+          <div id="eroot" token="" data-json=""></div>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+
+    <script>
+      // Paste the config your copied earlier
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1KLygZ2fCQs85a8lezhavp4zT1WjWgjo",
+        authDomain: "vn-site-short-url.firebaseapp.com",
+        databaseURL: "https://vn-site-short-url.firebaseio.com",
+        projectId: "vn-site-short-url",
+        storageBucket: "vn-site-short-url.appspot.com",
+        messagingSenderId: "1005507535037",
+        appId: "1:1005507535037:web:856fa010e18b2f98fdd7d4"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="js/util.js"></script>
+    <script>
+      setQuizToken();
+      displayCountdown();
+    </script>
+
+    </script><script>!function(a){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,l=[];i<n.length;i++)t=n[i],Object.prototype.hasOwnProperty.call(c,t)&&c[t]&&l.push(c[t][0]),c[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(a[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return p.push.apply(p,u||[]),f()}function f(){for(var e,r=0;r<p.length;r++){for(var t=p[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==c[u]&&(n=!1)}n&&(p.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},c={1:0},p=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return a[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=a,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/";var r=this.webpackJsonpireact=this.webpackJsonpireact||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;f()}([])</script>
+    <script src="js/react.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/circle.css">
+
+  </head>
+
+  <body>
+    <main role="main">
+      <div class="bg-light">
+        <div class="container">
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="images/logo.png" alt="logo">
+            <h2>Quick Challenge</h2>
+            <p class="lead">Thank you so much for to playing my game! Try your best and get a lucky gift!</p>
+          </div>
+
+          <!-- <div id="eroot" data-json="/js/questions.json"></div> -->
+          <div id="ecountdown"></div>
+          <div id="eroot" score="5" token="" data-json="http://localhost:5001/vn-site-short-url/us-central1/widgets/quiz"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="blog-footer text-center">
+      <p class="py-3">Copyright by <a href="mailto:contact@tavis.dev">Tavis</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/progressbar.js"></script>
+  </body>
+</html>

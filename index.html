@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+
+  <body>
+    <div class="site-wrap">
+      <div class="block-login">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-6 text-center">
+              <div class="avatar">
+                <img src="images/axon-network.svg" alt="IMG">
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <span class="login-title">Join Force</span>
+              <div class="login-form" id="sign-in-form">
+                <div class="ele" data-validate="Your name is required">
+                  <input id="fullname" type="text" name="fullname" placeholder="Fullname">
+                  <span class="focus-input"></span>
+                  <span class="symbol">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+
+                <div class="ele" data-validate="Valid email is required: ex@abc.xyz">
+                  <input id="email" type="text" name="email" placeholder="Email">
+                  <span class="focus-input"></span>
+                  <span class="symbol">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+
+                <div class="ele" data-validate="Mobile is required">
+                  <input type="text" name="mobile" id="phone-number" placeholder="Mobile">
+                  <span class="focus-input"></span>
+                  <span class="symbol mobile" id="phone-country">
+                    +84
+                  </span>
+                </div>
+
+                <div class="btn-submit">
+                  <button class="btn" id="sign-in-button" disabled="disabled">Send OTP</button>
+                </div>
+                <div id="warnning-exist-user" class="alert alert-warning mt-3" role="alert" style="display: none;">
+                  This mobile was registered!
+                </div>
+              </div>
+
+              <div class="login-form" id="verification-code-form" style="display: none;">
+                <div class="ele" data-validate="OTP is required">
+                  <input type="text" name="mobile" id="verification-code" placeholder="OTP">
+                  <span class="focus-input"></span>
+                  <span class="symbol">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                  </span>
+                </div>
+
+                <div class="btn-submit">
+                  <button class="btn" id="verify-code-button">Verify</button>
+                </div>
+                <div class="pt-5">
+                <a class="text-warning border border-warning px-5 py-2 rounded" href="/">Cancel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+
+    <script>
+      // Paste the config your copied earlier
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1KLygZ2fCQs85a8lezhavp4zT1WjWgjo",
+        authDomain: "vn-site-short-url.firebaseapp.com",
+        databaseURL: "https://vn-site-short-url.firebaseio.com",
+        projectId: "vn-site-short-url",
+        storageBucket: "vn-site-short-url.appspot.com",
+        messagingSenderId: "1005507535037",
+        appId: "1:1005507535037:web:856fa010e18b2f98fdd7d4"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
