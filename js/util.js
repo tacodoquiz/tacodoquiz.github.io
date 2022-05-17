@@ -2,7 +2,7 @@ const QUIZ_API = 'https://us-central1-vn-site-short-url.cloudfunctions.net/widge
 const QUIZ_TOKEN = 'quiz-token';
 const QUIZ_USER = 'quiz-user';
 const QUIZ_EMAIL = 'quiz-email';
-const QUIZ_COUNTDOWN = 5 * 60 * 1000;
+const QUIZ_COUNTDOWN = 2.5 * 60 * 1000;
 
 function getCodeFromUserInput() {
   return document.getElementById('verification-code').value;
